@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+    <!-- Import intlTelInput css and jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="form/css/intlTelInput.css" />
+    <script type="application/javascript" src="form/js/Keitaro.js"></script>
+
+
+    <title>International Phone Input</title>
+  </head>
+
+  <body>
+    <h3>International Phone</h3>
+    <form class="register-form" id="form" name="reg_form" method="post" action="send.php">
+      <!-- <input type="hidden" name="user_ip" value="" /> -->
+      <input type="hidden" name="country_code" id="country_code" />
+      <input type="hidden" name="idDinamFb" value="{idDinamFb}" />
+      <input type="hidden" name="idDinamTt" value="{idDinamTt}" />
+      <input type="hidden" value="{subid}" name="subid" />
+      <input type="hidden" name="affsub" value="{affsub}" />
+      <input type="hidden" value="{bk}" name="bk" />
+      <input type="hidden" name="creo" value="{creo}" />
+      <input type="hidden" name="buyer" value="{buyer}" />
+      <input type="hidden" name="gtag" value="{gtag}" />
+      <input type="hidden" name="gsnip" value="{gsnip}" />
+      
+      <div class="form-input-main">
+        <input class="form-control" type="text" name="first_name" placeholder="Имя" required />
+      </div>
+
+      <div class="form-input-main">
+        <input class="form-control" type="text" name="last_name" placeholder="Фамилия" required />
+      </div>
+
+      <div class="form-input-main">
+        <input class="form-control" type="email" name="email" placeholder="E-mail" required />
+      </div>
+
+      <div class="form-input-main">
+        <input type="hidden" name="phonePrefix" value="7" />
+        <input class="form-control" name="phone" id="phone" type="tel" required />
+      </div>
+
+      <div>
+        <button class="submit_btn" name="submitBtn" type="submit">GET STARTED</button>
+      </div>
+    </form>
+
+    <!-- Import intlTelInputs scripts and mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="form/js/intlTelInput.js"></script>
+    <script src="form/js/utils.js"></script>
+    <script src="form/js/intlTelInputConnect.js"></script>
+    <!-- <script src="form/js/GetUserIp.js"></script> -->
+  </body>
+</html>
